@@ -9,16 +9,16 @@ COPY package*.json ./
 
 # Install dependencies
 # Note: In development, we use 'npm install'
-# RUN npm install
+RUN npm install
 
-# # Copy the source code
-# COPY . .
+# Copy the source code
+COPY . .
 
-# # Next.js uses port 3000
-# EXPOSE 3000
+# Next.js uses port 3000
+EXPOSE 3000
 
-# # Set environment to development
-# ENV NODE_ENV development
+# Set environment to development
+ENV NODE_ENV development
 
 # Start Next.js development server
 CMD ["npm", "run", "dev"]
