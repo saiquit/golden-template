@@ -13,6 +13,9 @@ POSTGRES_DB=app_db
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 DJANGO_DEBUG=True
+DJANGO_SECRET_KEY=generate-a-random-string-here
+DJANGO_DEBUG=True
+NEXT_PUBLIC_API_URL=http://localhost/api
 EOF
 fi
 
